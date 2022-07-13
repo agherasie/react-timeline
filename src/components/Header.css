@@ -1,0 +1,64 @@
+.App-header {
+    background-color: #ffffff;
+    min-height: 64;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+
+  .Header-section {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #bebebe70;
+  }
+
+  .Filters {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .Filter {
+    height: 32px;
+    margin: 10px 5px 10px 5px;
+    min-width: 12px;
+    padding: 0 10px;
+    font-size: 16px;
+    color: black;
+    border: 1px solid #c2c2c2;
+    background-color: #e5e5e5;
+    cursor: pointer;
+    border-radius: 16px;
+    box-sizing: border-box;
+    flex-direction: row;
+    align-items: center;
+    display: inline-flex;
+    transition-duration: 200ms;
+  }
+
+  .Filter:hover {
+    background-color: #c2c2c2;
+  }
+
+  .Filter:focus {
+    background-color: black;
+    color: white;
+  }
+
+  input[type="text"] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    width: 50vh;
+    height: 42px;
+    padding: 0 10px;
+    color: #000;
+    border: 1px solid #BEBEBE;
+    border-radius: 2px 0 0 2px;
+  }
+
+  input:focus {
+    border: 1.1px solid #1c62b9;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.4);
+  }
