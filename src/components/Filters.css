@@ -1,0 +1,33 @@
+  .Filters {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .Filter {
+    height: 32px;
+    margin: 5px 5px 5px 5px;
+    min-width: 12px;
+    padding: 0 10px;
+    font-size: 16px;
+    color: black;
+    border: 1px solid #c2c2c2;
+    background-color: #e5e5e5;
+    cursor: pointer;
+    border-radius: 16px;
+    box-sizing: border-box;
+    flex-direction: row;
+    align-items: center;
+    display: inline-flex;
+    transition-duration: 200ms;
+  }
+
+  .Filter:hover {
+    background-color: #c2c2c2;
+  }
+
+  .Filter:focus {
+    background-color: black;
+    color: white;
+  }

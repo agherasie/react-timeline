@@ -1,11 +1,9 @@
 // import yticon from './yt-icon.png';
 import React from 'react';
 import './Header.css';
+import Filters from './Filters.js';
 
-const numbers = ["All", "French", "British", "US", "Celebrity", "Gaming", "Disstracks", "GradeAUnderA", "Boxing", "Influencers"];
-const listItems = numbers.map((number) =>
-  <p className="Filter">{number}</p>
-);
+const filters = ["All", "French", "British", "US", "Celebrity", "Gaming", "Disstracks", "GradeAUnderA", "Boxing", "Influencers"];
 
 export default function Header() {
     return (
@@ -15,9 +13,7 @@ export default function Header() {
             <input type="text" placeholder="Search"/>
           </div>
           <div className="Header-section">
-            <div className="Filters">
-              {listItems}
-            </div>
+            <Filters filters={filters}/>
           </div>
         </header>
     );
