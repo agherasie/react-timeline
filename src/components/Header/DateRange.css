@@ -1,5 +1,5 @@
 .dateRange {
-    position: absolute;
+    position: relative;
     margin-left: 50px;
     display: inline-flex;
     font-size: 12px;

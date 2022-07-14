@@ -14,7 +14,7 @@ function App() {
     return date;
   }
 
-  const [dateRange, setDateRange] = React.useState(["2005-02-14", getCurrentDate()]);
+  const [dateRange, setDateRange] = React.useState(["0001-01-01", getCurrentDate()]);
   const [currentFilters, setCurrentFilters] = React.useState(["All"])
 
   return (
