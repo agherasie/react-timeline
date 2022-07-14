@@ -5,6 +5,16 @@ import {events} from '../../events.js';
 import Filters from '../Filters.js';
 
 export default function Timeline(props) {
+    function writeDate(dateString) {
+        var date = new Date(dateString);
+
+        var year = date.getFullYear();
+        var month = String(date.getMonth() + 1).padStart(2, '0');
+        var day = String(date.getDate()).padStart(2, '0');
+
+        return day + "/" + month + "/" + year;
+    }
+
     var left = true;
 
     const listEvents = events.sort((a, b) => new Date(a.date) - new Date(b.date)).filter(function(event) {
@@ -34,7 +44,7 @@ export default function Timeline(props) {
             <div>
                 <div className={"container-"+(left ? "left" : "right")}>
                     <div className="timePoint">
-                        <span>{event.date}</span>
+                        <span>{writeDate(event.date)}</span>
                     </div>
                     <div className="event">
                         <a href={event.wiki}><h4>{event.title}</h4></a>
