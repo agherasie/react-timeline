@@ -6,7 +6,7 @@
 .timeline::after {
     content: '';
     position: absolute;
-    width: 10px;
+    width: 15px;
     background-color: 	#FF0000;
     top: 0;
     bottom: 0;
@@ -14,12 +14,13 @@
 }
 
 .timePoint {
-    height: 25px;
-    width: 25px;
-    background-color: #FF0000;
+    height: 10px;
+    width: 10px;
+    background-color: #282828;
+    outline: 10px solid red;
     border-radius: 50%;
     position: absolute;
-    top: 45%;
+    top: 50%;
     z-index: 1;
 }
 
@@ -42,11 +43,11 @@
 }
 
 .container-left > .timePoint {
-    left: calc(100% + 20px);
+    left: calc(100% + 32px);
 }
 
 .container-right > .timePoint {
-    right: calc(100% + 56px);
+    right: calc(100% + 57px);
 }
 
 .container-right, .container-left {
