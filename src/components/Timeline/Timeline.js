@@ -30,7 +30,8 @@ export default function Timeline(props) {
         <div className={"container-"+(event.id % 2 === 0 ? "left" : "right")}>
             <div className="event">
                 <p>📅 {event.date}</p>
-                <h4>{event.title}</h4>
+                <a href={event.wiki}><h4>{event.title}</h4></a>
+                {event.url && <iframe src={event.url} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>}
                 <Filters filters={event.filters} currentFilters={props.currentFilters} setCurrentFilters={props.setCurrentFilters}/>
             </div>
         </div>

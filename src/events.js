@@ -16,11 +16,14 @@ export const events = [
         title: "KSI vs Logan Paul Boxing Event",
         date: "2018-08-25",
         filters: ["Boxing", "British", "US", "Influencers", "Disstracks"],
+        url: "https://www.youtube.com/embed/BXEuyc_Kxrk",
+        wiki: "https://en.wikipedia.org/wiki/KSI_vs_Logan_Paul",
     },
     {
         id: 4,
         title: "T Series overtakes Pewdiepie",
         date: "2019-04-28",
         filters: ["Disstracks"],
+        wiki: "https://en.wikipedia.org/wiki/PewDiePie_vs_T-Series",
     },
 ];
