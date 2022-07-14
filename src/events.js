@@ -23,7 +23,7 @@ export const events = [
     {
         id: 4,
         title: "Ezio Auditore becomes Mentor of the Italian Brotherhood",
-        date: "1503-08-01",
+        date: "1503-08",
         filters: ["Ezio", "Auditore", "Assassins"],
         url: "https://www.youtube.com/embed/7VVdcxhElq0",
     },
@@ -43,7 +43,7 @@ export const events = [
     {
         id: 7,
         title: "Al Mualim is asssassinated by Altair",
-        date: "1191-09-01",
+        date: "1191-09",
         filters: ["Deaths", "Altair", "Al Mualim", "Assassins", "Templars"],
         url: "https://www.youtube.com/embed/tvt-oAZ8JP8"
     }
