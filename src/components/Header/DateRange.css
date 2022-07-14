@@ -1,0 +1,12 @@
+.dateRange {
+    position: absolute;
+    margin-left: 50px;
+    display: inline-flex;
+    font-size: 12px;
+    font-weight: 500;
+    align-items: center;
+}
+
+.dateRange > input {
+    margin: 10px 10px 10px 10px;
+}
