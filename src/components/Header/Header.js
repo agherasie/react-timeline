@@ -4,7 +4,7 @@ import './Header.css';
 import Filters from '../Filters.js'
 import DateRange from './DateRange.js';
 
-const filters = ["All", "French", "British", "US", "Celebrity", "Gaming", "Disstracks", "GradeAUnderA", "Boxing", "Influencers"];
+const filters = ["All", "US", "Tech", "Framework", "Cinema", "Boxing", "Comics", "DC"];
 
 export default function Header(props) {
 

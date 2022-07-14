@@ -27,12 +27,16 @@ export default function Timeline(props) {
         }
         return true;
     }).map((event) =>
-        <div className={"container-"+(event.id % 2 === 0 ? "left" : "right")}>
-            <div className="event">
-                <p>📅 {event.date}</p>
-                <a href={event.wiki}><h4>{event.title}</h4></a>
-                {event.url && <iframe src={event.url} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>}
-                <Filters filters={event.filters} currentFilters={props.currentFilters} setCurrentFilters={props.setCurrentFilters}/>
+        <div>
+            <div className={"container-"+(event.id % 2 === 0 ? "left" : "right")}>
+                <div className="timePoint">
+                    <span>{event.date}</span>
+                </div>
+                <div className="event">
+                    <a href={event.wiki}><h4>{event.title}</h4></a>
+                    {event.url && <iframe src={event.url} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>}
+                    <Filters filters={event.filters} currentFilters={props.currentFilters} setCurrentFilters={props.setCurrentFilters}/>
+                </div>
             </div>
         </div>
     );

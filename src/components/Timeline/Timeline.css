@@ -13,40 +13,58 @@
     left: 50%;
 }
 
+.timePoint {
+    height: 25px;
+    width: 25px;
+    background-color: #FF0000;
+    border-radius: 50%;
+    position: absolute;
+    top: 45%;
+    z-index: 1;
+}
+
+.timePoint > span {
+    width: 80px;
+    font-size: 14px;
+    padding: 5px 5px 5px 5px;
+    position: absolute;
+    background-color: #e5e5e5;
+    border-radius: 10px;
+    border: 1px solid #c2c2c2;
+    user-select: none;
+}
+
+.container-left > .timePoint > span {
+    left: 30px;
+}
+.container-right > .timePoint > span {
+    right: 30px;
+}
+
+.container-left > .timePoint {
+    left: calc(100% + 20px);
+}
+
+.container-right > .timePoint {
+    right: calc(100% + 56px);
+}
+
 .container-right, .container-left {
     position: relative;
     margin: 15px 10px 15px 10px;
     padding: 10px 10px 10px 10px;
-    border: 1px solid white;
     background-color: #282828;
     border-radius: 20px;
     width: 300px;
     text-align: center;
 }
 
-.container-right::after, .container-left::after {
-    position: absolute;
-    top: 50%;
-    content: "";
-    width: 57px;
-    border: 3px solid #ff0000c2;
-    background-color: #282828;
-}
-
 .container-left {
-    left: calc(50% - 300px * 1.3);
-}
-
-.container-left::after {
-    left: 100%;
+    left: calc(50% - 300px - 15px - 15px - 30px);
 }
 
 .container-right {
-    left: calc(50% + 300px * 0.2);
-}
-
-.container-right::after {
-    right: 100%;
+    left: calc(50% + 15px + 15px + 30px);
 }
 
 .event > p, .event > h4 {

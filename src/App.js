@@ -15,7 +15,7 @@ function App() {
   }
 
   const [dateRange, setDateRange] = React.useState(["2005-02-14", getCurrentDate()]);
-  const [currentFilters, setCurrentFilters] = React.useState(["Disstracks"])
+  const [currentFilters, setCurrentFilters] = React.useState(["All"])
 
   return (
     <div className="App">
