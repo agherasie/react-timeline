@@ -11,12 +11,11 @@ export default function Header(props) {
     return (
         <header className="App-header">
           <div className="Header-section">
-            {/* <img src={yticon} className="yt-icon"></img> */}
             <DateRange dateRange={props.dateRange} setDateRange={props.setDateRange} />
             <input type="text" placeholder="Search"/>
           </div>
           <div className="Header-section">
-            <Filters filters={filters}/>
+            <Filters filters={filters} currentFilters={props.currentFilters} setCurrentFilters={props.setCurrentFilters} />
           </div>
         </header>
     );

@@ -15,11 +15,21 @@ function App() {
   }
 
   const [dateRange, setDateRange] = React.useState(["2005-02-14", getCurrentDate()]);
+  const [currentFilters, setCurrentFilters] = React.useState(["Disstracks"])
 
   return (
     <div className="App">
-      <Header dateRange={dateRange} setDateRange={setDateRange} />
-      <Timeline dateRange={dateRange}/>
+      <Header
+        dateRange={dateRange}
+        setDateRange={setDateRange}
+        currentFilters={currentFilters}
+        setCurrentFilters={setCurrentFilters}
+      />
+      <Timeline
+        dateRange={dateRange}
+        currentFilters={currentFilters}
+        setCurrentFilters={setCurrentFilters}
+      />
     </div>
   );
 }
