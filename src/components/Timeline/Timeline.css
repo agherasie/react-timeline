@@ -25,6 +25,7 @@
 }
 
 .timePoint > span {
+    top: -10px;
     width: 80px;
     font-size: 14px;
     padding: 5px 5px 5px 5px;
