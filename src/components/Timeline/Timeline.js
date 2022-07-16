@@ -15,9 +15,15 @@ export default function Timeline(props) {
         return day + "/" + month + "/" + year;
     }
 
+    const [allEvents, setAllEvents] = React.useState(events)
+
+    React.useEffect(() => {
+        fetch("https://localhost/events").then(res => res.json()).then(data => setAllEvents(data['hydra:member']))
+    }, [])
+
     var left = true;
 
-    const listEvents = events.sort((a, b) => new Date(a.date) - new Date(b.date)).filter(function(event) {
+    const listEvents = allEvents.sort((a, b) => new Date(a.date) - new Date(b.date)).filter(function(event) {
         if (new Date(event.date) < new Date(props.dateRange[0])
         || new Date(event.date) > new Date(props.dateRange[1])) {
             return false;
