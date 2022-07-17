@@ -17,9 +17,21 @@ export default function Timeline(props) {
 
     const [allEvents, setAllEvents] = React.useState(events)
 
+    const request = {
+        url: "https://localhost/events",
+        object: {
+            headers: {
+                'Accept': 'application/json'
+            }
+        }
+    };
+
     React.useEffect(() => {
-        fetch("https://localhost/events").then(res => res.json()).then(data => setAllEvents(data['hydra:member']))
-    }, [])
+            fetch(request.url, request.object
+        )
+            .then(res => res.json())
+            .then(data => setAllEvents(data))
+    }, [request.url, request.object])
 
     var left = true;
 
